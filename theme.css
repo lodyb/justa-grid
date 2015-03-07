@@ -1,0 +1,18 @@
+section{
+	outline:1px solid rgba(255,0,75,0.5);
+}
+section > h1, section > h2, section > h3{
+	margin:0;
+	font-size:48px;
+	padding:0.4em 0;
+	background:-webkit-linear-gradient(top, #c22, #c34);
+	background:linear-gradient(to bottom,#c22,#c34);
+	color:#fff;
+	font-weight:normal;
+}
+section > h2{
+	font-size:32px;
+}
+section > h3{
+	font-size:24px;
+}
