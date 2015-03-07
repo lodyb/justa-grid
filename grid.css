@@ -16,7 +16,7 @@ body{
 }
 section{
 	font-size:0px;
-	width:calc(100% - 0.4em);
+	width:calc(99.999% - 0.4em);
 	display:inline-block;
 	padding:0;
 	margin:0;
@@ -29,40 +29,40 @@ section>p{
 	font-size:20px;
 }
 .s1{
-	width:calc(100% / 12 - 0.4em);
+	width:calc(8.333% - 0.4em);
 }
 .s2{
-	width:calc(100% / 6 - 0.4em);
+	width:calc(16.666% - 0.4em);
 }
 .s3{
-	width:calc(100% / 4 - 0.4em);
+	width:calc(24.999% - 0.4em);
 }
 .s4{
-	width:calc(100% / 3 - 0.4em);
+	width:calc(33.333% - 0.4em);
 }
 .s5{
-	width:calc(100% / 2.4 - 0.4em);
+	width:calc(41.666% - 0.4em);
 }
 .s6{
-	width:calc(100% / 2 - 0.4em);
+	width:calc(49.999% - 0.4em);
 }
 .s7{
-	width:calc(100% / 1.71428571429 - 0.4em);
+	width:calc(58.333% - 0.4em);
 }
 .s8{
-	width:calc(100% / 1.5 - 0.4em);
+	width:calc(66.666% - 0.4em);
 }
 .s9{
-	width:calc(100% / 1.33333333333 - 0.4em);
+	width:calc(74.999% - 0.4em);
 }
 .s10{
-	width:calc(100% / 1.2 - 0.4em);
+	width:calc(83.333% - 0.4em);
 }
 .s11{
-	width:calc(100% / 1.09090909091 - 0.4em);
+	width:calc(91.666% - 0.4em);
 }
 .full{
-	height:calc(100vh - 0.4em);
+	min-height:calc(100vh - 0.4em);
 }
 @media screen and (max-width: 550px) {
 	.s2,.s3,.s3,.s4,.s5,.s6,.s6,.s7,.s8,.s9,.s10,.s11{
@@ -73,14 +73,11 @@ section>p{
 	}
 }
 @media screen and (min-width: 551px) and (max-width:800px) {
-	.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11{
-		width:calc(100% - 0.4em);
+	.s7,.s8,.s9,.s10,.s11{
 	}
-	.s2,.s3{
-		width:calc(50% - 0.4em);
+	.s4,.s5,.s6,.s2,.s3{
 	}
 	.s1{
-		width:calc(25% - 0.4em);
 	}
 }
 @media screen and (min-width: 801px) and (max-width:960px) {

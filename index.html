@@ -91,9 +91,64 @@
 		<section class="s9"><p>9</p></section>
 	</div>
 	<div class="row">
-		<section class="full"><p>fullscreen</p></section>
+		<section class="full">
+			<h2>Fullscreen Element</h2>
+			<p>This will match the view height of the browser or the size of the content (whichever is larger)</p>
+		</section>
 	</div>
 </footer>
+
+<div class="overlay row">
+	<section class="s4">
+		<h3>Spacing</h3>
+		<p><input id="spacing" type="range" min="0" max="100" step="1" value="0"></p>
+	</section>
+	<section class="s4">
+		<h3>Max width</h3>
+		<p><input id="maxwidth" type="range" min="640" max="1600" step="1" value="1200"></p>
+	</section>
+	<section class="s4">
+		<h3>Outlines</h3>
+		<p><input type="checkbox" id="outlines" onclick="check()" checked></p>
+	</section>
+</div>
+
+<script>
+// a little controller for the variables
+// for demonstration purposes!
+
+const section = document.querySelectorAll('section')
+const spacing = document.getElementById('spacing')
+const maxwidth = document.getElementById('maxwidth')
+const outlines = document.getElementById('outlines')
+
+spacing.addEventListener('input', function()
+{
+	for(var i=0; i<section.length; i++){
+		section[i].style.fontSize = spacing.value+'px'
+	}
+	console.log('spacing changed to: ', spacing.value+'px')
+})
+maxwidth.addEventListener('input', function()
+{
+		document.body.style.maxWidth = maxwidth.value+'px'
+		document.getElementsByClassName('overlay')[0].style.maxWidth = maxwidth.value+'px'
+	console.log('body max-width changed to: ', maxwidth.value+'px')
+})
+function check()
+{
+	for(var i=0; i<section.length; i++){
+		if(outlines.checked){
+			section[i].style.outlineWidth = 1+'px'
+			console.log('outlines on')
+		}else{
+			section[i].style.outlineWidth = 0
+			console.log('outlines off')
+		}
+	}
+	
+}
+</script>
 
 </body>
 </html>
