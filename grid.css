@@ -69,6 +69,7 @@ section>p{
 @media screen and (max-width: 550px) {
 	.s2,.s3,.s3,.s4,.s5,.s6,.s6,.s7,.s8,.s9,.s10,.s11{
 		width:calc(100% - 0.4em);
+		height:auto !important;
 	}
 	.s1{
 		width:calc(50% - 0.4em);
