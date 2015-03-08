@@ -6,3 +6,5 @@
 * Should be pretty compatible with browsers (todo testing)
 * Designed to be extended upon on a per-site basis
 * Sort of responsive, but not the focus here
+
+[Click here for demo](http://lody.be/justa-grid)
