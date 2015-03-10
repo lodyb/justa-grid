@@ -66,28 +66,3 @@ section>p{
 .full{
 	min-height:calc(100vh - 0.4em);
 }
-@media screen and (max-width: 550px) {
-	.s2,.s3,.s3,.s4,.s5,.s6,.s6,.s7,.s8,.s9,.s10,.s11{
-		width:calc(100% - 0.4em);
-		height:auto !important;
-	}
-	.s1{
-		width:calc(50% - 0.4em);
-	}
-}
-@media screen and (min-width: 551px) and (max-width:800px) {
-	.s7,.s8,.s9,.s10,.s11{
-	}
-	.s4,.s5,.s6,.s2,.s3{
-	}
-	.s1{
-	}
-}
-@media screen and (min-width: 801px) and (max-width:960px) {
-	.s9,.s10,.s11,.s12{
-	}
-	.s5,.s6,.s7{
-	}
-	.s4{}
-	.s8{}
-}
